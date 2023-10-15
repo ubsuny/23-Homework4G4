@@ -1,0 +1,30 @@
+name: Periodic time
+
+on:
+  push:
+    paths:
+      - 'original_periodic.py'
+      
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: 3.9  # Replace with the desired Python version
+
+    - name: Install dependencies
+      run:
+        python -m pip install --upgrade pip
+        # pip install -r requirements.txt  # Create a requirements.txt file if needed
+
+    - name: List directory contents
+      run: ls -al
+
+    - name: Run Python script
+      run: python original_periodic.py  # Replace with the actual name of your Python script
