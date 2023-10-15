@@ -2,8 +2,8 @@ name: Periodic time
 
 on:
   push:
-    paths:
-      - 'periodic_time1.py'
+    branches:
+      - main
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -15,7 +15,7 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v2
       with:
-        python-version: 3.9  # Replace with the desired Python version
+        python-version: 3.8  # Replace with the desired Python version
 
     - name: Install dependencies
       
@@ -26,6 +26,6 @@ jobs:
     - name: List directory contents
       run: ls -al
     - name: Run Python script
-      run: periodic_time1.py  # Replace with the actual name of your Python script
+      run: python periodic_time1.py  # Replace with the actual name of your Python script
 
     
