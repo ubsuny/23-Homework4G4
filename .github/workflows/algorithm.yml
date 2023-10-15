@@ -1,7 +1,9 @@
 name: Run Periodic time
 
-
-on: [push] # when should we run this action
+on:
+  push: # when should we run this action
+     paths: 
+       - 'periodic_time.py'
 
 jobs:
   build:
