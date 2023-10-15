@@ -1,8 +1,11 @@
 name: Unit testing with pytest
 
 on: [push] # when should we run this action
+  paths:
+      - 'unittest.py'
 
-jobs: # what should we do when it is run
+
+jobs: test-and-plot: 
   build:
     runs-on: ubuntu-latest # platform it runs on
     steps:
