@@ -21,4 +21,4 @@ jobs:
         pip install -r requirements.txt  # If you have any dependencies
 
     - name: Run Python script
-      run: python periodic.py
+      run: python periodic_time.py
