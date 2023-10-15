@@ -22,6 +22,8 @@ jobs:
        python -m pip install --upgrade pip
        pip install -r requirements.txt  # Create a requirements.txt file if needed
 
+    - name: List directory contents
+      run: ls -al
     - name: Run Python script
       run: python periodic_time.py  # Replace with the actual name of your Python script
 
