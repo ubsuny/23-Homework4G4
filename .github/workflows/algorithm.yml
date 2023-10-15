@@ -1,10 +1,9 @@
 name: Run Periodic time
 
 on:
-  push: # when should we run this action
-     paths: 
-       - 'new_periodic_time.py'
-
+  push:
+    paths:
+      - 'new_periodic_time.py'
 jobs:
   build:
     runs-on: ubuntu-latest
