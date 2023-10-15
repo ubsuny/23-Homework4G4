@@ -1,5 +1,5 @@
 name: Run Periodic time
-run-name: my_first_branch
+
 
 on: [push] # when should we run this action
 
