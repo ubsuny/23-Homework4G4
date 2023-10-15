@@ -26,6 +26,6 @@ jobs:
     - name: List directory contents
       run: ls -al
     - name: Run Python script
-      run: .github/workflows/p_algorithm.yml  # Replace with the actual name of your Python script
+      run: periodic_time1.py  # Replace with the actual name of your Python script
 
     
