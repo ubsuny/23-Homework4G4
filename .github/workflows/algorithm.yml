@@ -1,0 +1,28 @@
+name: Run Periodic time
+run-name: my_first_branch
+
+on: [push] # when should we run this action
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: 3.9  # Replace with the desired Python version
+
+    - name: Install dependencies
+      
+      run:
+       python -m pip install --upgrade pip
+       pip install -r requirements.txt  # Create a requirements.txt file if needed
+
+    - name: Run Python script
+      run: python periodic_time.py  # Replace with the actual name of your Python script
+
+    
