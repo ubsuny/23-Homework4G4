@@ -3,7 +3,7 @@ name: Periodic time
 on:
   push:
     paths:
-      - 'original_periodic.py'
+      - 'periodic_time1.py'
 jobs:
   build:
     runs-on: ubuntu-latest
