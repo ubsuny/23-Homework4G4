@@ -3,7 +3,7 @@ name: Run Periodic time
 on:
   push: # when should we run this action
      paths: 
-       - 'periodic_time.py'
+       - 'new_periodic_time.py'
 
 jobs:
   build:
@@ -27,6 +27,6 @@ jobs:
     - name: List directory contents
       run: ls -al
     - name: Run Python script
-      run: python periodic_time.py  # Replace with the actual name of your Python script
+      run: pytest new_periodic_time.py  # Replace with the actual name of your Python script
 
     
