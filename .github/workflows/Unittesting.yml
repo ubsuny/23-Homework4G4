@@ -1,7 +1,7 @@
 name: Unit testing with pytest
 on: [push] # when should we run this action
   paths:
-      - 'unittest.py'
+      - 'periodic_time.py'
 jobs:
   -test: 
   build:
@@ -19,4 +19,4 @@ jobs:
     - name: Test with pytest
       run: |
         pip install pytest
-        pytest unittest.py
+        pytest periodic_time.py
