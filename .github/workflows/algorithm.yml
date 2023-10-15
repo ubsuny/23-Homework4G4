@@ -1,6 +1,6 @@
-name: Python CI
+name: Run Periodic time
 
-on: [push]
+on: [push] # when should we run this action
 
 jobs:
   build:
@@ -8,17 +8,20 @@ jobs:
 
     steps:
     - name: Checkout code
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
 
     - name: Set up Python
-      uses: actions/setup-python@v2
+      uses: actions/setup-python@v4
       with:
-        python-version: 3.x  # You can specify a Python version here
+        python-version: 3.10  # Replace with the desired Python version
 
     - name: Install dependencies
-      run: |
-        python -m pip install --upgrade pip
-        pip install -r requirements.txt  # If you have any dependencies
+      
+      run:
+       python -m pip install --upgrade pip
+       pip install -r requirements.txt  # Create a requirements.txt file if needed
 
     - name: Run Python script
-      run: python periodic_time.py
+      run: python periodic_time.py  # Replace with the actual name of your Python script
+
+    
