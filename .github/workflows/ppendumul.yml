@@ -24,4 +24,4 @@ jobs:
         # Add other required packages if necessary using pip install
 
     - name: Run script
-      run: python pendulum.py
+      run: python perpendulum.py
