@@ -7,9 +7,9 @@ jobs:
   build:
     runs-on: ubuntu-latest # platform it runs on
     steps:
-    - uses: actions/checkout@v4 # checkout your code
+    - uses: actions/checkout@v2 # checkout your code
     - name: Set up Python
-      uses: actions/setup-python@v4
+      uses: actions/setup-python@v2
       with:
         python-version: '3.10' # specify python version
     - name: Install dependencies # which libraries do we need for testing
