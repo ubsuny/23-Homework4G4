@@ -26,6 +26,6 @@ jobs:
     - name: List directory contents
       run: ls -al
     - name: Run Python script
-      run: python periodic_time1.py  # Replace with the actual name of your Python script
+      run: python periodic_test.py  # Replace with the actual name of your Python script
 
     
