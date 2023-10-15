@@ -17,9 +17,9 @@ def calculate_periodic_time(l):
   
 __all__=["calculate_periodic_time"]
 
-lengths_list = input("Enter a list of length, separated by commas: ")
+lengths_list = [2,4,6,8,9]
   # Split the user input string into a list.
-lengths_list = lengths_list.split(",")
+#lengths_list = lengths_list.split(",")
   # Convert the elements of the list to integers
 integer_list = []
 for element in lengths_list:
