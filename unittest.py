@@ -33,5 +33,5 @@ class TestCalculatePeriodicTime(unittest.TestCase):
             print(f"For l = {x[i]}, Expected: {expected_periodic_times[i]}, Got: {actual_periodic_times[i]}")
             assert math.isclose(actual_periodic_times[i], expected_periodic_times[i], rel_tol=1e-2)  # Increased tolerance
 
-if _name_ == '_main_':
+if __name__ == '__main__':
     unittest.main(argv=['first-arg-is-ignored'], exit=False)
