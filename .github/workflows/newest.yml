@@ -3,7 +3,7 @@ name: Periodic time
 on:
   push:
     paths:
-      - 'op.py'  # Update the filename here to 'op.py'
+      - 'periodic.py'  # Update the filename here to 'op.py'
 
 jobs:
   build:
@@ -27,4 +27,4 @@ jobs:
       run: ls -al
 
     - name: Run Python script
-      run: python op.py  # Update to 'op.py'
+      run: python periodic.py  # Update to 'op.py'
