@@ -1,4 +1,4 @@
-name: Run Periodic time
+name: Periodic time
 
 on:
   push:
