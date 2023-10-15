@@ -5,7 +5,7 @@ on: [push] # when should we run this action
       - 'unittest.py'
 
 
-jobs: test-and-plot: 
+jobs: test- 
   build:
     runs-on: ubuntu-latest # platform it runs on
     steps:
