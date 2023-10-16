@@ -9,7 +9,7 @@ jobs: # what should we do when it is run
   build:
     runs-on: ubuntu-latest # platform it runs on
     steps:
-    - uses: actions/checkout@v2 # checkout your code
+    - uses: actions/checkout@v4 # checkout your code
     - name: Set up Python
       uses: actions/setup-python@v4
       with:
@@ -21,4 +21,4 @@ jobs: # what should we do when it is run
     - name: Test with pytest
       run: |
         pip install pytest
-        python period_unit.py
+        pytest period_unit.py
