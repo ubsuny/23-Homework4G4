@@ -21,4 +21,4 @@ jobs: # what should we do when it is run
     - name: Test with pytest
       run: |
         pip install pytest
-        python period_unit.py
+        pytest period_unit.py
