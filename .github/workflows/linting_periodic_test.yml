@@ -1,0 +1,24 @@
+name: Lint Python Scripts
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Check out code
+      uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.10' # Specify the Python version you want to use
+
+    - name: Install linter
+      run: pip install pylint
+
+    - name: Lint periodic_test.py
+      run: pylint periodic_test.py
