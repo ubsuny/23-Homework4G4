@@ -1,4 +1,4 @@
-# Using Github Actions to Automatically Lint and Unit Test Commits
+# Using Github Actions to Automatically Lint and Unit Test Commits to Repository
 
 ## Changelog
 
