@@ -1,5 +1,5 @@
 import math
-import module
+from module import *
 
 class TestCalculatePeriodicTime(unittest.TestCase):
 
