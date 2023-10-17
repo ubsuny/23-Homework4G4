@@ -1,4 +1,4 @@
-name: pytest of final code
+name: linting of final code
 
 on:
   push:
