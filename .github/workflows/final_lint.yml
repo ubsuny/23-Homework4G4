@@ -3,7 +3,7 @@ name: Lint
 on:
   push:
     branches:
-      - module_unit_test
+      - main
 jobs:
   build:
     runs-on: ubuntu-latest
