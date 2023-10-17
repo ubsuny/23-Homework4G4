@@ -3,7 +3,7 @@ name: Periodic time
 on:
   push:
     branches:
-      - linting_action
+      - main
 jobs:
   build:
     runs-on: ubuntu-latest
