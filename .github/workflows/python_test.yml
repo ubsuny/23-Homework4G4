@@ -3,7 +3,7 @@ name: Unit testing with pytest
 on:
   push: 
     branches: 
-      - main       
+      - module_unit_test     
 
 jobs: # what should we do when it is run
   build:
