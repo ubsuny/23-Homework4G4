@@ -1,27 +1,28 @@
 name: Run Pendulum Calculation
 
 on:
-  push:
+  push: # runs this action when a merge request is accepted
     branches:
-      - main # or the branch you want this action to be triggered on
+      - main # specifies the branch you want this action to be triggered on
 
 jobs:
   run_script:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest # platform it runs on
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v2
+    - name: Checkout repository 
+      uses: actions/checkout@v2 # allows this file to see other files in repository
 
     - name: Set up Python
-      uses: actions/setup-python@v2
+      uses: actions/setup-python@v2 # installs python
       with:
-        python-version: 3.8 # or whichever version you need
+        python-version: 3.8 # specifies which python version to install
 
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
         # Add other required packages if necessary using pip install
 
+      # runs "perpendulum.py" file
     - name: Run script
       run: python perpendulum.py
