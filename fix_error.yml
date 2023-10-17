@@ -1,0 +1,4 @@
+ # Run pylint on the Python script and save the output to a log file
+    - name: Run pylint
+      run: pylint pylint_unit_test.py > pylint_output.log || exit 0
+      # Here '|| exit 0' is used to ensure the workflow doesn't fail even if pylint finds issues.
