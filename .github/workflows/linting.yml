@@ -1,4 +1,4 @@
-name: linting of final code
+name: Linting of final code
 
 on:
   push:
