@@ -1,4 +1,4 @@
-name: Unit testing with pytest
+name: Unit testing with pytest module
 
 on:
   push: 
