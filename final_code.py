@@ -13,8 +13,12 @@ class TestCalculatePeriodicTime(unittest.TestCase):
         actual_p_t = list(map(calculate_periodic_time, x))
 
         # Print and assert that the actual periodic times are close to the expected periodic times
-        for i in range(len(x)):
-            print(f"For l = {x[i]}, Expected: {expected_periodic_times[i]}, Got: {actual_p_t[i]}")
+        #for i in range(len(x)):
+    
+        for i, element in enumerate(x):
+
+
+           print(f"For l = {x[i]}, Expected: {expected_periodic_times[i]}, Got: {actual_p_t[i]}")
             assert math.isclose(actual_p_t[i], expected_periodic_times[i], rel_tol=1e-2)  
 if __name__ == '__main__':
     unittest.main(argv=['first-arg-is-ignored'], exit=False)
