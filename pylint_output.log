@@ -1,0 +1,10 @@
+************* Module periodic_test
+periodic_test.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+periodic_test.py:14:4: W0621: Redefining name 'calculate_periodic_time' from outer scope (line 3) (redefined-outer-name)
+periodic_test.py:14:30: C3001: Lambda expression assigned to a variable. Define a function using the "def" keyword instead. (unnecessary-lambda-assignment)
+periodic_test.py:3:28: W0613: Unused argument 'l' (unused-argument)
+periodic_test.py:31:4: R1721: Unnecessary use of a comprehension, use list(periodic_times) instead. (unnecessary-comprehension)
+
+-----------------------------------
+Your code has been rated at 6.43/10
+
