@@ -20,7 +20,7 @@ The calculation is simply contained in the return statement
 
 ### Implementation
 
-For the implementation (perpendulum.py), there are a couple of key differences. Notably, in the original file (Period.py), the user is prompted to enter a list of lengths
+For the implementation (periodic_test.py), there are a couple of key differences. Notably, in the original file (Period.py), the user is prompted to enter a list of lengths
 ```Python
 lengths_list = input("Enter a list of length, separated by commas: ")
 ```
@@ -28,10 +28,10 @@ Which has now been replaced by a hard coded list
 ```Python
 lengths_list = [1,2,3,4]
 ```
-To comply better with the linting/unit testing process.
-
-Additionally, the original Pendulum.py imports the `algorithm calculate_periodic_time()` from a seperate module, while the finalized perpendulum.py opts to define the algorithm within the file.
-
+- To comply better with the linting/unit testing process.
+- The code is implemented with module file algorithm.py imported to periodic_test.py for algorithm part and for unit 
+  test module_file.py is imported to write github action for file final_code.py.
+- Also  manually write use the installer in the .yml file instead of seperating using requirement.txt file. Either way we implement the action.
 ## Action Implementation
 ### Linting
 
@@ -92,6 +92,16 @@ pip install pytest
 And we then unittest the file pushed with
 ```YAML
 pytest unit.py
+
 ```
+## LICENSE Access
+We are permitted to use the license to use the algorithm for Homework 3 group 3.
+
+(https://github.com/ubsuny/23-Homework4G4/blob/main/LICENSE)
+## References
+- ChatGpt
+- (https://docs.github.com/en/actions/learn-github-actions/understanding-github-actions#overview)
+- (https://www.harness.io/blog/github-actions)
+ 
 
 
