@@ -2,7 +2,31 @@
 
 ## Changelog
 
-Changes to the algorithm will be documented here
+### Algorithm
+The periodic time calculation algorithm (contained in module_file.py) is largely unchanged. The one exception is that instead of using a lambda function,
+```Python
+calculate_periodic_time= (lambda l: 2* math.pi/ math.sqrt(g / l))
+return calculate_periodic_time
+```
+The calculation is simply contained in the return statement
+```Python
+return 2 * math.pi * math.sqrt(l / g)
+```
+To make the module more compact.
+
+### Implementation
+
+For the implementation (perpendulum.py), there are a couple of key differences. Notably, in the original file (Period.py), the user is prompted to enter a list of lengths
+```Python
+lengths_list = input("Enter a list of length, separated by commas: ")
+```
+Which has now been replaced by a hard coded list
+```Python
+lengths_list = [1,2,3,4]
+```
+To comply better with the linting/unit testing process.
+
+Additionally, the original Pendulum.py imports the `algorithm calculate_periodic_time()` from a seperate module, while the finalized perpendulum.py opts to define the algorithm within the file.
 
 ## Action Implementation
 ### Linting
