@@ -1,17 +1,9 @@
-
-name: Periodic Time Module
-=======
-name: Periodic Time Module
-
+name: Lint
 
 on:
   push:
     branches:
-
       - main
-=======
-      - main
-
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -34,17 +26,8 @@ jobs:
       run:
         pip install pylint
     - name: List directory contents
-      run: ls -al
-    - name: lint periodic_test.py
-
-      run: pylint periodic_test.py > pylint_output.log  || exit 0  # Replace with the actual name of your Python script
-    - name: Upload log file
-      uses: actions/upload-artifact@v2
-      with:
-          name: pylint_output
-          path: pylint_output.log 
-=======
-      run: pylint periodic_test.py  # Replace with the actual name of your Python script
-
+      run:  ls -al
+    - name: lint final_code.py
+      run: pylint final_code.py || exit 0 # Replace with the actual name of your Python script
 
     
