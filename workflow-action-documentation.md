@@ -3,16 +3,20 @@
 ## Changelog
 
 ### Algorithm
-The periodic time calculation algorithm (contained in module_file.py) is largely unchanged. The one exception is that instead of using a lambda function,
+The periodic time calculation algorithm (contained in module_file.py) is largely unchanged except for the part where the code requires input manually. We replaced it with input predefined in the code.
+## for unittest
+We first made the following changes for implementing github action for unit test
+- Created a separate module for the unit test.
+- Trailing spaces in existing code are minimized.
+- Indention errors are corrected.
+- Input was predefined in the code.
+- Actual_periodic_times is changed to actual_p_t to make the line shorter.
+-  Lambda funtion is replaced by 
 ```Python
-calculate_periodic_time= (lambda l: 2* math.pi/ math.sqrt(g / l))
-return calculate_periodic_time
+ return 2 * math.pi * math.sqrt(l / g)
 ```
 The calculation is simply contained in the return statement
-```Python
-return 2 * math.pi * math.sqrt(l / g)
-```
-To make the module more compact.
+
 
 ### Implementation
 
@@ -89,3 +93,5 @@ And we then unittest the file pushed with
 ```YAML
 pytest unit.py
 ```
+
+
