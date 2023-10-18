@@ -1,5 +1,5 @@
 import math
-import algorithm
+from algorithm import *
 def calculate_periodic_time(l):
     """
   Calculates the periodic time of a simple pendulum.
