@@ -28,6 +28,26 @@ To comply better with the linting/unit testing process.
 
 Additionally, the original Pendulum.py imports the `algorithm calculate_periodic_time()` from a seperate module, while the finalized perpendulum.py opts to define the algorithm within the file.
 
+### Unit Test
+
+The changes to the unit test are minimal. Notably, the input is again hard coded as
+```Python
+x = [0.5, 1, 1.5, 2, 2.5]
+```
+
+
+In addition, the unit test is now placed in a seperate module, making it more compact and compatible with linting. In addition, some whitespace was removed to make the code more readable.
+
+Finally the name of the list of calculated times,
+```Python
+actual_periodic_times
+```
+Was reduced to
+```Python
+actual_p_t
+```
+To conserve space and shorten the line.
+
 ## Action Implementation
 ### Linting
 
