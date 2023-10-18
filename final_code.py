@@ -1,9 +1,7 @@
 import math
 import module_file
 import unittest
-
 class TestCalculatePeriodicTime(unittest.TestCase):
-
     def test_calculate_periodic_time(self):
         # Define a list of lengths of pendulums
         x = [0.5, 1, 1.5, 2, 2.5]
