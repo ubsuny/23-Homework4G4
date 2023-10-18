@@ -109,3 +109,17 @@ And we then unittest the file pushed with
 ```YAML
 pytest unit.py
 ```
+
+## References
+
+Previous code for the calculation of the periodic time for a simple pendulum was pulled from
+https://github.com/ubsuny/23-Homework3G1
+Which is free to be used and modified under the MIT license
+
+Other sources:
+
+https://pypi.org/project/pylint/
+-Used to understand the functionality of pylint
+
+https://github.com/ubsuny/GithubActionsTestRepository23
+-Used as an example for implementing GitHub Actions
