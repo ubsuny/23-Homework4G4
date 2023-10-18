@@ -11,8 +11,8 @@ def calculate_periodic_time(l):
       The periodic time of the pendulum in seconds.
     """
     # Acceleration due to gravity in meters per second squared.
-    g = 9.81
-    
+    G = 9.81
+    # Constant (g) should be in capital 
     # Correct formula for the period of a simple pendulum
     return 2 * math.pi * math.sqrt(l / g)
 
