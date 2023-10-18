@@ -14,8 +14,7 @@ def calculate_periodic_time(l):
   g = 9.81
   # using lambda function calculate the periodic time. 
   calculate_periodic_time= lambda l: 2* math.pi/ math.sqrt(g / l)
-  return calculate_periodic_time
-  
+return calculate_periodic_time
 __all__=["calculate_periodic_time"]
 
 lengths_list = [2,4,6,8,9]
