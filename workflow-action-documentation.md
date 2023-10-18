@@ -2,7 +2,14 @@
 
 ## Changelog
 
-Changes to the algorithm will be documented here
+The periodic time calculation algorithm is largely unchanged. The one exception is that instead of using a lambda function,
+```Python
+calculate_periodic_time= (lambda l: 2* math.pi/ math.sqrt(g / l))
+return calculate_periodic_time
+```
+The calculation is simply contained in the return statement
+return 2 * math.pi * math.sqrt(l / g)
+To make the module more compact.
 
 ## Action Implementation
 ### Linting
