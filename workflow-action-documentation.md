@@ -54,3 +54,14 @@ We finally lint the pushed code via
 name: lint final_code.py
       run: pylint final_code.py || exit 0
 ```
+
+### Unit Testing
+
+For the unit test, we follow the same steps in the unit.yml file until we install the necessary dependencies. We now need to install pytest with 
+```YAML
+pip install pytest
+```
+And we then unittest the file pushed with
+```YAML
+pytest unit.py
+```
