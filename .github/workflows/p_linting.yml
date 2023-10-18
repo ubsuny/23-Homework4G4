@@ -1,6 +1,5 @@
 
-name: Periodic Time Module
-=======
+
 name: Periodic Time Module
 
 
@@ -9,8 +8,7 @@ on:
     branches:
 
       - main
-=======
-      - main
+
 
 jobs:
   build:
@@ -43,7 +41,7 @@ jobs:
       with:
           name: pylint_output
           path: pylint_output.log 
-=======
+
       run: pylint periodic_test.py  # Replace with the actual name of your Python script
 
 
