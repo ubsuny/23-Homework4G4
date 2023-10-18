@@ -15,7 +15,7 @@ class TestCalculatePeriodicTime(unittest.TestCase):
 
         # Print and assert that the actual periodic times are close to the expected periodic times
         for i, length in enumerate(x):
-            print(f"For l = {x[i]}, Expected: {expected_periodic_times[i]}, Got: {actual_p_t[i]}")
+            print(f"For l = {length}, Expected: {expected_periodic_times[i]}, Got: {actual_p_t[i]}")
             assert math.isclose(actual_p_t[i], expected_periodic_times[i], rel_tol=1e-2)  
             
 if __name__ == '__main__':
