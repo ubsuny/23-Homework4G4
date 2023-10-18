@@ -18,7 +18,7 @@ class TestCalculatePeriodicTime(unittest.TestCase):
             print(f"For l = {length}, Expected: {expected_periodic_times[i]}, Got: {actual_p_t[i]}")
             assert math.isclose(actual_p_t[i], expected_periodic_times[i], rel_tol=1e-2)
             
- if __name__ == '__main__':
+     if __name__ == '__main__':
      unittest.main(argv=['first-arg-is-ignored'], exit=False)
      
 
