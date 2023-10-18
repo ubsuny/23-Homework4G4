@@ -27,7 +27,7 @@ jobs:
         pip install pylint
     - name: List directory contents
       run:  ls -al
-    - name: lint unittestcode.py
-      run: pylint unittestcode.py  # Replace with the actual name of your Python script
+    - name: lint final_code.py
+      run: pylint final_code.py  # Replace with the actual name of your Python script
 
     
