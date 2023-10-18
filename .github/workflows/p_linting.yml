@@ -30,7 +30,7 @@ jobs:
     - name: lint periodic_test.py
       run: pylint periodic_test.py > pylint_output.log  || exit 0  # Replace with the actual name of your Python script
     - name: Upload log file
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@v2
       with:
           name: pylint_output
           path: pylint_output.log 
