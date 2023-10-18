@@ -1,4 +1,4 @@
-name: Unit testing with pytest
+name: Module Pytest
 
 on:
   push: 
@@ -21,4 +21,4 @@ jobs: # what should we do when it is run
     - name: Test with pytest
       run: |
         pip install pytest
-        pytest period_unit.py
+        pytest final_code.py
