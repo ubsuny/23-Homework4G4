@@ -1,8 +1,5 @@
 
 
-name: Periodic Time Module
-
-
 on:
   push:
     branches:
