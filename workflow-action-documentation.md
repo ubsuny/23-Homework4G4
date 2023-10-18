@@ -16,7 +16,7 @@ To make the module more compact.
 
 ### Implementation
 
-For the implementation (perpendulum.py), there are a couple of key differences. Notably, in the original file (Period.py), the user is prompted to enter a list of lengths
+For the implementation `perpendulum.py`, there are a couple of key differences. Notably, in the original file `Period.py`, the user is prompted to enter a list of lengths
 ```Python
 lengths_list = input("Enter a list of length, separated by commas: ")
 ```
@@ -31,7 +31,7 @@ Additionally, the original Pendulum.py imports the `algorithm calculate_periodic
 ## Action Implementation
 ### Linting
 
-The linting action is implemented in the file final_lint.yml. Generally speaking, it will automatically lint every file that is pused to the main branch of the repository. Here's how it works:
+The linting action is implemented in the file `final_lint.yml`. Generally speaking, it will automatically lint every file that is pused to the main branch of the repository. Here's how it works:
 
 
 We start by defining the trigger. This means that this action will run whenever there is a push to the main branch of the repo
