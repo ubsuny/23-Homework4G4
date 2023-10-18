@@ -8,7 +8,9 @@ calculate_periodic_time= (lambda l: 2* math.pi/ math.sqrt(g / l))
 return calculate_periodic_time
 ```
 The calculation is simply contained in the return statement
+```Python
 return 2 * math.pi * math.sqrt(l / g)
+```
 To make the module more compact.
 
 ## Action Implementation
