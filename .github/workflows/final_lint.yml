@@ -28,6 +28,6 @@ jobs:
     - name: List directory contents
       run:  ls -al
     - name: lint final_code.py
-      run: pylint final_code.py || exit 0 # Replace with the actual name of your Python script
+      run: pylint final_code.py  # Replace with the actual name of your Python script
 
     
